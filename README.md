@@ -1,27 +1,67 @@
-# Bruno Ramos · Portafolio
+# Bruno Ramos · Desarrollador Full Stack
 
-Portafolio en español de Italo Bruno Ramos Sotomayor ([BrunoRasot](https://github.com/BrunoRasot)).
+Soy **Italo Bruno Ramos Sotomayor**, desarrollador full stack enfocado en crear aplicaciones web para resolver necesidades concretas de gestión y organización.
+
+Trabajo en interfaces, APIs y bases de datos. Conecto la experiencia del usuario con las reglas de negocio y la información que sostiene cada proceso. Mis proyectos reúnen autenticación, permisos, operaciones transaccionales, reportes y pruebas.
+
+## Sobre mí
+
+Me interesa construir aplicaciones completas: desde una interfaz clara hasta un backend con validaciones y datos bien estructurados. Trabajo con TypeScript, React, Next.js, Node.js y PostgreSQL, y utilizo Git, pruebas y herramientas de automatización para mantener una base de código organizada.
+
+En **TemploGym** desarrollo procesos de gestión de un gimnasio: membresías, ventas, caja, inventario y asistencias. En **Finance Pro** trabajo en cuentas, ingresos, gastos y resúmenes financieros con aislamiento de información por usuario.
+
+## Tecnologías y herramientas
+
+| Área                      | Tecnologías utilizadas en mis proyectos                                                                       |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Lenguajes y web           | TypeScript, JavaScript, SQL, HTML y CSS                                                                       |
+| Frontend                  | React, Next.js, Tailwind CSS, Vite, React Router, TanStack Query, React Hook Form, Axios, Recharts y Radix UI |
+| Backend                   | Node.js, Express, NestJS, Zod, class-validator, class-transformer, RxJS, Multer, node-cron y Winston          |
+| Datos                     | PostgreSQL, Prisma ORM, Prisma Migrate, node-postgres y Supabase                                              |
+| Autenticación y seguridad | Supabase Auth, JWT, JOSE, bcryptjs, Helmet, CORS, rate limiting, OTP, roles y permisos                        |
+| Pruebas y calidad         | Vitest, Jest, Testing Library, Supertest, jsdom, ESLint, Oxlint, Prettier y cobertura de pruebas              |
+| Herramientas y despliegue | Git, GitHub, GitHub Actions, Docker, Docker Compose, Nginx, Caddy, pnpm, npm y monorepos                      |
+| Reportes y utilidades     | ExcelJS, jsPDF, jsPDF AutoTable, qrcode, html5-qrcode y date-fns                                              |
 
 ## Proyectos destacados
 
-- [TemploGym](https://github.com/BrunoRasot/Sistema-de-Gimnasio): gestión de gimnasio con React, Express, PostgreSQL y Prisma.
-- [Finance Pro](https://github.com/BrunoRasot/Finance-pro): finanzas personales con Next.js, NestJS, Supabase Auth y Prisma. La aplicación móvil está pendiente.
+### TemploGym
 
-Los diagramas muestran la arquitectura de cada proyecto; no son capturas de sus interfaces. Contenido basado en los README públicos, revisados el 9 de septiembre de 2026.
+Sistema web de gestión para gimnasios que centraliza clientes, membresías, personal, inventario, ventas, pagos y asistencias.
 
-## Desarrollo
+- Planes, renovaciones y vencimiento de membresías.
+- Punto de venta, caja, pagos mixtos y cuentas por cobrar.
+- Inventario con kardex auditable, compras y proveedores.
+- Autenticación, roles y permisos por módulo.
+- Reportes operativos y exportaciones.
 
-Requiere Node.js >= 22.13.0.
+**Stack principal:** React, TypeScript, Express, PostgreSQL y Prisma.
 
-```bash
-npm ci
-npm run dev
-```
+[Ver repositorio de TemploGym](https://github.com/BrunoRasot/Sistema-de-Gimnasio)
 
-## Compilación
+### Finance Pro
 
-```bash
-npm run build
-```
+Aplicación de finanzas personales que permite organizar cuentas, registrar ingresos y gastos y consultar saldos e historial.
 
-React, TypeScript y Vinext. Contenido en `app/page.tsx`, estilos en `app/globals.css` y configuración de Sites en `.openai/hosting.json`.
+- Registro, acceso y recuperación de contraseña.
+- Cuentas y movimientos con aislamiento por usuario.
+- Historial con filtros y cálculo de saldos.
+- Resumen mensual por moneda y categoría.
+- Monorepo con una web Next.js y una API NestJS.
+
+**Stack principal:** Next.js, TypeScript, NestJS, PostgreSQL, Prisma y Supabase Auth.
+
+La web sigue en desarrollo; la aplicación móvil está pendiente.
+
+[Ver repositorio de Finance Pro](https://github.com/BrunoRasot/Finance-pro)
+
+## Mi enfoque
+
+- **Claridad:** interfaces que ayudan a entender y completar cada tarea.
+- **Consistencia:** reglas de negocio y validaciones explícitas.
+- **Trazabilidad:** operaciones registradas y datos relacionados.
+- **Mantenibilidad:** código tipado, pruebas y control de versiones.
+
+## Encuéntrame
+
+[GitHub · BrunoRasot](https://github.com/BrunoRasot)

@@ -9,6 +9,103 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 const github = 'https://github.com/BrunoRasot';
+const skills = [
+  {
+    title: 'Frontend',
+    description:
+      'Interfaces, navegación, formularios y visualización de información.',
+    items: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'TypeScript',
+      'React',
+      'Next.js',
+      'Tailwind CSS',
+      'Vite',
+      'React Router',
+      'TanStack Query',
+      'React Hook Form',
+      'Axios',
+      'Recharts',
+      'Radix UI',
+    ],
+  },
+  {
+    title: 'Backend',
+    description: 'APIs REST y lógica para operaciones de negocio.',
+    items: [
+      'Node.js',
+      'Express',
+      'NestJS',
+      'Zod',
+      'class-validator',
+      'class-transformer',
+      'RxJS',
+      'Multer',
+      'node-cron',
+      'Winston',
+    ],
+  },
+  {
+    title: 'Bases de datos',
+    description: 'Modelado relacional, consultas, migraciones y persistencia.',
+    items: [
+      'PostgreSQL',
+      'SQL',
+      'Prisma ORM',
+      'Prisma Migrate',
+      'node-postgres',
+      'Supabase',
+    ],
+  },
+  {
+    title: 'Autenticación y seguridad',
+    description: 'Sesiones, permisos y protección de APIs.',
+    items: [
+      'Supabase Auth',
+      'JWT',
+      'JOSE',
+      'bcryptjs',
+      'Helmet',
+      'CORS',
+      'Rate limiting',
+      'OTP',
+      'Roles y permisos',
+    ],
+  },
+  {
+    title: 'Pruebas y calidad',
+    description: 'Validación del comportamiento y calidad del código.',
+    items: [
+      'Vitest',
+      'Jest',
+      'Testing Library',
+      'Supertest',
+      'jsdom',
+      'ESLint',
+      'Oxlint',
+      'Prettier',
+      'Cobertura de pruebas',
+    ],
+  },
+  {
+    title: 'Herramientas y despliegue',
+    description: 'Control de versiones, entornos y automatización.',
+    items: [
+      'Git',
+      'GitHub',
+      'GitHub Actions',
+      'Docker',
+      'Docker Compose',
+      'Nginx',
+      'Caddy',
+      'pnpm',
+      'npm',
+      'Monorepos',
+    ],
+  },
+];
 const projects = [
   {
     number: '01',
@@ -66,8 +163,9 @@ export default function Home() {
           br<span>.</span>
         </a>
         <nav aria-label="Navegación principal">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#tecnologias">Tecnologías</a>
           <a href="#proyectos">Proyectos</a>
-          <a href="#enfoque">Enfoque</a>
           <a
             className="github-nav"
             href={github}
@@ -103,6 +201,91 @@ export default function Home() {
           <div className="hero-footer">
             <span>React / Next.js / Node.js / PostgreSQL</span>
             <span>PORTAFOLIO — 2026</span>
+          </div>
+        </section>
+        <section
+          id="sobre-mi"
+          className="about wrap"
+          aria-labelledby="about-title"
+        >
+          <div className="about-heading">
+            <p className="eyebrow">SOBRE MÍ</p>
+            <h2 id="about-title">
+              Soy Bruno Ramos.
+              <br />
+              <span>Construyo de principio a fin.</span>
+            </h2>
+            <p className="full-name">Italo Bruno Ramos Sotomayor</p>
+          </div>
+          <div className="about-copy">
+            <p className="about-intro">
+              Soy desarrollador full stack, enfocado en crear aplicaciones web
+              que resuelvan necesidades concretas de gestión y organización.
+            </p>
+            <p>
+              Trabajo tanto en la experiencia de usuario como en la lógica del
+              servidor y el diseño de bases de datos. Con React, Next.js,
+              Node.js y PostgreSQL, conecto esas piezas para convertir procesos
+              de negocio en herramientas prácticas.
+            </p>
+            <p>
+              En TemploGym desarrollo flujos de membresías, ventas, inventario y
+              control de acceso. En Finance Pro trabajo con cuentas, movimientos
+              y resúmenes financieros, cuidando que cada usuario acceda
+              únicamente a su información.
+            </p>
+            <p>
+              Mi forma de trabajar combina código tipado, validación de datos,
+              pruebas y control de versiones. Me interesa que una aplicación sea
+              clara para quien la usa y mantenible para quien continúa su
+              desarrollo.
+            </p>
+            <a
+              className="text-link"
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Conoce mi trabajo en GitHub <ArrowUpRight size={18} />
+            </a>
+          </div>
+        </section>
+        <section
+          id="tecnologias"
+          className="skills-section wrap"
+          aria-labelledby="skills-title"
+        >
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">TECNOLOGÍAS Y HERRAMIENTAS</p>
+              <h2 id="skills-title">Mi stack, de extremo a extremo.</h2>
+            </div>
+          </div>
+          <p className="skills-intro">
+            Las tecnologías con las que trabajo en mis proyectos, desde la
+            interfaz hasta la base de datos y el despliegue.
+          </p>
+          <div className="skills-grid">
+            {skills.map((skill, index) => (
+              <article className="skill-group" key={skill.title}>
+                <span className="skill-index">0{index + 1}</span>
+                <h3>{skill.title}</h3>
+                <p>{skill.description}</p>
+                <ul>
+                  {skill.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <div className="tools-note">
+            <span>También en mis proyectos</span>
+            <p>
+              Generación de reportes y documentos con ExcelJS, jsPDF y jsPDF
+              AutoTable; códigos QR con qrcode y html5-qrcode; manejo de fechas
+              con date-fns.
+            </p>
           </div>
         </section>
         <section id="proyectos" className="projects-section">

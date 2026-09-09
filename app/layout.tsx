@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 export const metadata: Metadata = {
   title: 'Bruno Ramos | Desarrollo Full Stack',
+  icons: { icon: '/favicon.svg' },
   description:
     'Portafolio de Bruno Ramos: TemploGym y Finance Pro, aplicaciones de gestión y finanzas con React, Next.js, Node.js y PostgreSQL.',
 };
