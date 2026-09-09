@@ -14,16 +14,17 @@ En **TemploGym** desarrollo procesos de gestión de un gimnasio: membresías, ve
 
 ## Tecnologías y herramientas
 
-| Área                      | Tecnologías utilizadas en mis proyectos                                                                       |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Lenguajes y web           | TypeScript, JavaScript, SQL, HTML y CSS                                                                       |
-| Frontend                  | React, Next.js, Tailwind CSS, Vite, React Router, TanStack Query, React Hook Form, Axios, Recharts y Radix UI |
-| Backend                   | Node.js, Express, NestJS, Zod, class-validator, class-transformer, RxJS, Multer, node-cron y Winston          |
-| Datos                     | PostgreSQL, Prisma ORM, Prisma Migrate, node-postgres y Supabase                                              |
-| Autenticación y seguridad | Supabase Auth, JWT, JOSE, bcryptjs, Helmet, CORS, rate limiting, OTP, roles y permisos                        |
-| Pruebas y calidad         | Vitest, Jest, Testing Library, Supertest, jsdom, ESLint, Oxlint, Prettier y cobertura de pruebas              |
-| Herramientas y despliegue | Git, GitHub, GitHub Actions, Docker, Docker Compose, Nginx, Caddy, pnpm, npm y monorepos                      |
-| Reportes y utilidades     | ExcelJS, jsPDF, jsPDF AutoTable, qrcode, html5-qrcode y date-fns                                              |
+### Lenguajes y frontend
+
+JavaScript · TypeScript · Python · PHP · SQL · React · Next.js · Vue.js · Nuxt · Angular · HTML5 · CSS3
+
+### Backend, datos y APIs
+
+Node.js · Express · NestJS · Laravel · PostgreSQL · MySQL · MongoDB · Redis · Prisma · REST API · WebSockets
+
+### UI, calidad y operaciones
+
+Tailwind CSS · Bootstrap · Sass · Material UI · Jest · Cypress · Playwright · Docker · GitHub Actions · AWS · Azure · Vercel
 
 ## Proyectos destacados
 
@@ -67,4 +68,3 @@ La web sigue en desarrollo; la aplicación móvil está pendiente.
 ## Encuéntrame
 
 [GitHub · BrunoRasot](https://github.com/BrunoRasot)
-

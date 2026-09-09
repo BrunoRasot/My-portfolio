@@ -11,98 +11,56 @@ import {
 const github = 'https://github.com/BrunoRasot';
 const skills = [
   {
-    title: 'Frontend',
-    description:
-      'Interfaces, navegación, formularios y visualización de información.',
+    title: 'Lenguajes y frontend',
+    description: 'Lenguajes y frameworks para construir experiencias web.',
     items: [
-      'HTML',
-      'CSS',
       'JavaScript',
       'TypeScript',
+      'Python',
+      'PHP',
+      'SQL',
       'React',
       'Next.js',
-      'Tailwind CSS',
-      'Vite',
-      'React Router',
-      'TanStack Query',
-      'React Hook Form',
-      'Axios',
-      'Recharts',
-      'Radix UI',
+      'Vue.js',
+      'Nuxt',
+      'Angular',
+      'HTML5',
+      'CSS3',
     ],
   },
   {
-    title: 'Backend',
-    description: 'APIs REST y lógica para operaciones de negocio.',
+    title: 'Backend, datos y APIs',
+    description: 'Servicios, bases de datos y comunicación entre aplicaciones.',
     items: [
       'Node.js',
       'Express',
       'NestJS',
-      'Zod',
-      'class-validator',
-      'class-transformer',
-      'RxJS',
-      'Multer',
-      'node-cron',
-      'Winston',
-    ],
-  },
-  {
-    title: 'Bases de datos',
-    description: 'Modelado relacional, consultas, migraciones y persistencia.',
-    items: [
+      'Laravel',
       'PostgreSQL',
-      'SQL',
-      'Prisma ORM',
-      'Prisma Migrate',
-      'node-postgres',
-      'Supabase',
+      'MySQL',
+      'MongoDB',
+      'Redis',
+      'Prisma',
+      'REST API',
+      'WebSockets',
     ],
   },
   {
-    title: 'Autenticación y seguridad',
-    description: 'Sesiones, permisos y protección de APIs.',
+    title: 'UI, calidad y operaciones',
+    description: 'Diseño de interfaces, pruebas, automatización y despliegue.',
     items: [
-      'Supabase Auth',
-      'JWT',
-      'JOSE',
-      'bcryptjs',
-      'Helmet',
-      'CORS',
-      'Rate limiting',
-      'OTP',
-      'Roles y permisos',
-    ],
-  },
-  {
-    title: 'Pruebas y calidad',
-    description: 'Validación del comportamiento y calidad del código.',
-    items: [
-      'Vitest',
+      'Tailwind CSS',
+      'Bootstrap',
+      'Sass',
+      'Material UI',
       'Jest',
-      'Testing Library',
-      'Supertest',
-      'jsdom',
-      'ESLint',
-      'Oxlint',
-      'Prettier',
-      'Cobertura de pruebas',
-    ],
-  },
-  {
-    title: 'Herramientas y despliegue',
-    description: 'Control de versiones, entornos y automatización.',
-    items: [
-      'Git',
-      'GitHub',
-      'GitHub Actions',
+      'Cypress',
+      'Playwright',
       'Docker',
-      'Docker Compose',
-      'Nginx',
-      'Caddy',
-      'pnpm',
-      'npm',
-      'Monorepos',
+      'GitHub Actions',
+      'AWS',
+      'Azure',
+      'Vercel',
     ],
   },
 ];
@@ -262,8 +220,8 @@ export default function Home() {
             </div>
           </div>
           <p className="skills-intro">
-            Las tecnologías con las que trabajo en mis proyectos, desde la
-            interfaz hasta la base de datos y el despliegue.
+            Las tecnologías que manejo, desde la interfaz hasta la base de datos
+            y el despliegue.
           </p>
           <div className="skills-grid">
             {skills.map((skill, index) => (
@@ -278,14 +236,6 @@ export default function Home() {
                 </ul>
               </article>
             ))}
-          </div>
-          <div className="tools-note">
-            <span>También en mis proyectos</span>
-            <p>
-              Generación de reportes y documentos con ExcelJS, jsPDF y jsPDF
-              AutoTable; códigos QR con qrcode y html5-qrcode; manejo de fechas
-              con date-fns.
-            </p>
           </div>
         </section>
         <section id="proyectos" className="projects-section">
