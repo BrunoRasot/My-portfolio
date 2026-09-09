@@ -1,5 +1,7 @@
 # Bruno Ramos · Desarrollador Full Stack
 
+[Ver mi portafolio](https://bruno-ramos-portfolio.vercel.app)
+
 Soy **Italo Bruno Ramos Sotomayor**, desarrollador full stack enfocado en crear aplicaciones web para resolver necesidades concretas de gestión y organización.
 
 Trabajo en interfaces, APIs y bases de datos. Conecto la experiencia del usuario con las reglas de negocio y la información que sostiene cada proceso. Mis proyectos reúnen autenticación, permisos, operaciones transaccionales, reportes y pruebas.
@@ -65,3 +67,4 @@ La web sigue en desarrollo; la aplicación móvil está pendiente.
 ## Encuéntrame
 
 [GitHub · BrunoRasot](https://github.com/BrunoRasot)
+
