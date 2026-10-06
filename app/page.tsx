@@ -78,7 +78,7 @@ const projects = [
     icon: Building2,
     color: 'erp',
     repo: 'Sistema-ERP',
-    demo: 'https://vivelite-erp.vercel.app',
+    demo: 'https://sistema-erp-demo.vercel.app/',
     lead: 'Gestión integral, inventario y distribución logística para empresas.',
     detail:
       'Sistema ERP empresarial diseñado con arquitectura Modular Monolith. Especializado en control de envases retornables en custodia, kardex de inventario continuo, facturación electrónica SUNAT, despachos y turnos de caja auditables.',
