@@ -190,9 +190,37 @@ h2 span {
   background: #233027;
   color: #d4f6a2;
 }
+.erp .project-visual {
+  background: #152736;
+  color: #8ce1f7;
+}
+.erp .arch-node {
+  border-color: #38bdf860;
+  background: #0f1f2e80;
+}
+.gym .project-visual {
+  background: #1d3124;
+  color: #b3f7bf;
+}
+.gym .arch-node {
+  border-color: #4ade8060;
+  background: #14261b80;
+}
+.ushas .project-visual {
+  background: #311d38;
+  color: #f5b7f7;
+}
+.ushas .arch-node {
+  border-color: #e879f960;
+  background: #24142b80;
+}
 .finance .project-visual {
-  background: #252b45;
-  color: #c0cdff;
+  background: #202744;
+  color: #c2d1ff;
+}
+.finance .arch-node {
+  border-color: #818cf860;
+  background: #151c3580;
 }
 .visual-top {
   display: flex;
@@ -228,10 +256,6 @@ h2 span {
   gap: 12px;
   font-size: 14px;
   border-radius: 4px;
-}
-.finance .arch-node {
-  border-color: #7b8fd270;
-  background: #19213f80;
 }
 .arch-node > span {
   margin-left: auto;
@@ -314,19 +338,32 @@ h3 {
   gap: 16px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .status {
   color: #a9abb4;
   font-size: 12px;
   line-height: 1.6;
-  max-width: 180px;
+  max-width: 200px;
 }
-.project-end a {
+.project-links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.project-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   white-space: nowrap;
   font-size: 14px;
+}
+.demo-link {
+  color: var(--accent);
+}
+.demo-link:hover {
+  text-decoration: underline;
 }
 .approach {
   padding-top: 100px;

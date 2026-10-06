@@ -7,8 +7,13 @@ import {
   Layers,
   Database,
   ShieldCheck,
+  Building2,
+  ShoppingBag,
+  ExternalLink,
 } from 'lucide-react';
+
 const github = 'https://github.com/BrunoRasot';
+
 const skills = [
   {
     title: 'Lenguajes y frontend',
@@ -64,14 +69,40 @@ const skills = [
     ],
   },
 ];
+
 const projects = [
   {
     number: '01',
+    title: 'Vivelite ERP',
+    category: 'ERP & GESTIÓN LOGÍSTICA',
+    icon: Building2,
+    color: 'erp',
+    repo: 'Sistema-ERP',
+    demo: 'https://vivelite-erp.vercel.app',
+    lead: 'Gestión integral, inventario y distribución logística para empresas.',
+    detail:
+      'Sistema ERP empresarial diseñado con arquitectura Modular Monolith. Especializado en control de envases retornables en custodia, kardex de inventario continuo, facturación electrónica SUNAT, despachos y turnos de caja auditables.',
+    features: [
+      'Control de envases retornables y custodia por cliente',
+      'Kardex de inventario, compras y turnos de caja auditables',
+      'Facturación electrónica SUNAT y gestión de pedidos en ruta',
+      'Monolito modular con colas de procesamiento y caché Redis',
+    ],
+    stack: ['Next.js 15', 'TypeScript', 'NestJS 10', 'PostgreSQL', 'Prisma', 'Redis'],
+    front: 'Next.js 15 · Tailwind',
+    back: 'NestJS 10 · Modular Monolith',
+    db: 'PostgreSQL · Prisma · Redis',
+    auth: 'Passport JWT · RBAC',
+    status: 'Producción & Demo activa',
+  },
+  {
+    number: '02',
     title: 'TemploGym',
     category: 'GESTIÓN DE NEGOCIOS',
     icon: Dumbbell,
     color: 'gym',
     repo: 'Sistema-de-Gimnasio',
+    demo: 'https://templogym-bruno-web.onrender.com/?share=1',
     lead: 'La operación de un gimnasio, conectada en un solo sistema.',
     detail:
       'Una aplicación web que integra clientes, membresías, inventario, ventas, caja y asistencias. Su API REST conecta la operación con datos trazables y permisos por módulo.',
@@ -84,32 +115,60 @@ const projects = [
     stack: ['React 19', 'TypeScript', 'Express 5', 'PostgreSQL', 'Prisma'],
     front: 'React · Vite',
     back: 'Express · REST API',
+    db: 'PostgreSQL · Prisma',
     auth: 'JWT · OTP por correo',
     status: 'Aplicación web implementada',
   },
   {
-    number: '02',
+    number: '03',
+    title: 'USHAS',
+    category: 'COMERCIO ELECTRÓNICO',
+    icon: ShoppingBag,
+    color: 'ushas',
+    repo: 'Ushas',
+    demo: 'https://ushas-peru.vercel.app/',
+    lead: 'Catálogo interactivo y experiencia de compra moderna.',
+    detail:
+      'Plataforma e-commerce desarrollada como monorepo con Turborepo. Storefront público reactivo con Vue 3, catálogo optimizado con filtros dinámicos, carrito interactivo y arquitectura modular preparada para backend NestJS.',
+    features: [
+      'Catálogo de productos con filtros y búsqueda ágil',
+      'Carrito de compras reactivo y flujo de checkout',
+      'Arquitectura monorepo con paquetes de dominio compartidos',
+      'Diseño responsive mobile-first optimizado para conversión',
+    ],
+    stack: ['Vue 3', 'TypeScript', 'Vite', 'Tailwind CSS', 'Turborepo'],
+    front: 'Vue 3 · Pinia · Tailwind',
+    back: 'NestJS (en integración) · API',
+    db: 'Packages · Domain Contracts',
+    auth: 'JWT · Control de acceso',
+    status: 'MVP navegable desplegado',
+  },
+  {
+    number: '04',
     title: 'Finance Pro',
     category: 'FINANZAS PERSONALES',
     icon: Wallet,
     color: 'finance',
     repo: 'Finance-pro',
+    demo: 'https://finance-pro-web-o6ce.onrender.com',
     lead: 'Más claridad sobre el dinero. Desde cada movimiento.',
     detail:
       'Una aplicación de finanzas personales con cuentas, ingresos, gastos y saldos por usuario. Organizada como monorepo, con una web Next.js y una API NestJS.',
     features: [
-      'Cuentas, ingresos y gastos',
+      'Cuentas, ingresos, transferencias y gastos',
       'Historial con filtros y saldos calculados',
-      'Resumen mensual por moneda y categoría',
-      'Autenticación y aislamiento por usuario',
+      'Resumen mensual por moneda y presupuestos',
+      'Autenticación y aislamiento de datos por usuario',
     ],
-    stack: ['Next.js', 'TypeScript', 'NestJS', 'Supabase Auth', 'Prisma'],
+    stack: ['Next.js', 'TypeScript', 'NestJS', 'Supabase Auth', 'Prisma', 'PostgreSQL'],
     front: 'Next.js · Web',
     back: 'NestJS · REST API',
+    db: 'PostgreSQL · Prisma',
     auth: 'Supabase Auth · JWT',
-    status: 'Web en desarrollo · móvil pendiente',
+    status: 'Web en desarrollo',
   },
 ];
+
 export default function Home() {
   return (
     <>
@@ -150,14 +209,14 @@ export default function Home() {
           <div className="hero-bottom">
             <p>
               Desarrollo aplicaciones web que conectan interfaces, lógica de
-              negocio y datos. Estos son mis proyectos de gestión y finanzas.
+              negocio y datos. Estos son mis proyectos de ERP, gestión, e-commerce y finanzas.
             </p>
             <a className="primary-link" href="#proyectos">
               Explorar proyectos <ArrowDown size={18} />
             </a>
           </div>
           <div className="hero-footer">
-            <span>React / Next.js / Node.js / PostgreSQL</span>
+            <span>React / Next.js / Vue / NestJS / PostgreSQL</span>
             <span>PORTAFOLIO — 2026</span>
           </div>
         </section>
@@ -178,19 +237,16 @@ export default function Home() {
           <div className="about-copy">
             <p className="about-intro">
               Soy desarrollador full stack, enfocado en crear aplicaciones web
-              que resuelvan necesidades concretas de gestión y organización.
+              que resuelvan necesidades concretas de gestión, logística y organización.
             </p>
             <p>
               Trabajo tanto en la experiencia de usuario como en la lógica del
-              servidor y el diseño de bases de datos. Con React, Next.js,
-              Node.js y PostgreSQL, conecto esas piezas para convertir procesos
-              de negocio en herramientas prácticas.
+              servidor y el diseño de bases de datos. Con React, Next.js, Vue,
+              NestJS, Express y PostgreSQL, conecto esas piezas para convertir procesos
+              de negocio en herramientas prácticas y escalables.
             </p>
             <p>
-              En TemploGym desarrollo flujos de membresías, ventas, inventario y
-              control de acceso. En Finance Pro trabajo con cuentas, movimientos
-              y resúmenes financieros, cuidando que cada usuario acceda
-              únicamente a su información.
+              He desarrollado proyectos como Vivelite ERP (gestión comercial y distribución con Next.js y NestJS), TemploGym (administración integral de gimnasios), USHAS (e-commerce modular en Vue 3) y Finance Pro (control financiero personal).
             </p>
             <p>
               Mi forma de trabajar combina código tipado, validación de datos,
@@ -244,13 +300,13 @@ export default function Home() {
               <div>
                 <p className="eyebrow">DEL CÓDIGO AL PRODUCTO</p>
                 <h2>
-                  Proyectos seleccionados<span> (02)</span>
+                  Proyectos seleccionados<span> (04)</span>
                 </h2>
               </div>
               <span className="section-note">
-                Dos problemas reales.
+                Cuatro soluciones reales.
                 <br />
-                Dos formas de resolverlos.
+                Cuatro arquitecturas de software.
               </span>
             </div>
             <div className="project-grid">
@@ -282,10 +338,11 @@ export default function Home() {
                         <span>02</span>
                       </div>
                       <div className="connector" />
-                      <div className="arch-label">PERSISTENCIA</div>
+                      <div className="arch-label">PERSISTENCIA / DATOS</div>
                       <div className="arch-node">
                         <Database size={18} />
-                        PostgreSQL · Prisma<span>03</span>
+                        {p.db}
+                        <span>03</span>
                       </div>
                     </div>
                     <div className="visual-bottom">
@@ -313,14 +370,27 @@ export default function Home() {
                     </div>
                     <div className="project-end">
                       <span className="status">{p.status}</span>
-                      <a
-                        href={`${github}/${p.repo}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Ver código de ${p.title} en GitHub`}
-                      >
-                        Ver código <ArrowUpRight size={18} />
-                      </a>
+                      <div className="project-links">
+                        {p.demo && (
+                          <a
+                            href={p.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`Ver demo de ${p.title}`}
+                            className="demo-link"
+                          >
+                            Demo <ExternalLink size={14} />
+                          </a>
+                        )}
+                        <a
+                          href={`${github}/${p.repo}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Ver código de ${p.title} en GitHub`}
+                        >
+                          Código <ArrowUpRight size={16} />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </article>
@@ -348,8 +418,8 @@ export default function Home() {
               <section>
                 <h3>Interfaces con propósito</h3>
                 <p>
-                  React, Next.js y TypeScript para organizar flujos de gestión,
-                  cuentas y movimientos.
+                  React, Next.js, Vue y TypeScript para organizar flujos de gestión,
+                  comercio, cuentas y operaciones.
                 </p>
               </section>
             </div>
@@ -358,7 +428,7 @@ export default function Home() {
               <section>
                 <h3>Reglas de negocio explícitas</h3>
                 <p>
-                  APIs con Express y NestJS, validación de datos y control de
+                  APIs con Express y NestJS, arquitecturas modulares, validación de datos y control de
                   acceso.
                 </p>
               </section>
@@ -368,8 +438,8 @@ export default function Home() {
               <section>
                 <h3>Datos que sostienen el producto</h3>
                 <p>
-                  PostgreSQL y Prisma para modelar relaciones, registrar
-                  operaciones y consultar información.
+                  PostgreSQL, Prisma y Redis para modelar relaciones, registrar
+                  operaciones, auditoría y consultar información.
                 </p>
               </section>
             </div>
