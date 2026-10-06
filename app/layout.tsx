@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Bruno Ramos | Desarrollo Full Stack',
   icons: { icon: '/favicon.svg' },
   description:
-    'Portafolio de Bruno Ramos: TemploGym y Finance Pro, aplicaciones de gestión y finanzas con React, Next.js, Node.js y PostgreSQL.',
+    'Portafolio de Bruno Ramos: Vivelite ERP, TemploGym, USHAS y Finance Pro. Aplicaciones web full stack con React, Next.js, Vue, NestJS y PostgreSQL.',
 };
 export default function RootLayout({
   children,
