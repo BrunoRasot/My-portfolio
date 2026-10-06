@@ -150,7 +150,7 @@ const projects = [
     icon: Wallet,
     color: 'finance',
     repo: 'Finance-pro',
-    demo: 'https://finance-pro-web-o6ce.onrender.com',
+    demo: 'https://finance-pro-demo.vercel.app/',
     lead: 'Más claridad sobre el dinero. Desde cada movimiento.',
     detail:
       'Una aplicación de finanzas personales con cuentas, ingresos, gastos y saldos por usuario. Organizada como monorepo, con una web Next.js y una API NestJS.',
