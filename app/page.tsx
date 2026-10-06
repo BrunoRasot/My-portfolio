@@ -102,7 +102,7 @@ const projects = [
     icon: Dumbbell,
     color: 'gym',
     repo: 'Sistema-de-Gimnasio',
-    demo: 'https://templogym-bruno-web.onrender.com/?share=1',
+    demo: 'https://sistema-gimnasio-demo.vercel.app/',
     lead: 'La operación de un gimnasio, conectada en un solo sistema.',
     detail:
       'Una aplicación web que integra clientes, membresías, inventario, ventas, caja y asistencias. Su API REST conecta la operación con datos trazables y permisos por módulo.',
